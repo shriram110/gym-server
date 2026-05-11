@@ -1,0 +1,18 @@
+# Optional Render Blueprint. You can also configure manually in the dashboard.
+# Push this file to your repo, then on Render click "New +" → "Blueprint" and point it here.
+services:
+  - type: web
+    name: gym-server
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        sync: false  # set in dashboard from Neon
+      - key: SECRET_KEY
+        generateValue: true
+      - key: CORS_ORIGINS
+        sync: false  # set to your Vercel URL after frontend deploy
+      - key: ACCESS_TOKEN_EXPIRE_MINUTES
+        value: "10080"
