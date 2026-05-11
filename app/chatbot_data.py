@@ -2,7 +2,7 @@
 import random
 
 GENERIC_REPLIES = [
-    "Great question! At Iron Forge Gym, consistency beats intensity. Aim for at least 4 sessions a week and your results will compound.",
+    "Great question! At Muscle Mania Gym, consistency beats intensity. Aim for at least 4 sessions a week and your results will compound.",
     "Remember — progress isn't linear. Track your sets and reps weekly so you can spot real trends, not noise.",
     "If you ever feel stuck, drop me a message. I can suggest variations to break a plateau.",
 ]
@@ -39,7 +39,7 @@ KEYWORD_REPLIES = {
     ("fees", "payment", "due", "bill"):
         "All fee details are on your dashboard under the Fees section. We send a reminder 7 days before due date and apply a small late fee after 5 days past due.",
     ("hours", "open", "timing", "time"):
-        "Iron Forge is open Mon–Sat 5 am – 11 pm and Sun 6 am – 10 pm. Off-peak (10 am – 4 pm) is the quietest if you like elbow room.",
+        "Muscle Mania is open Mon–Sat 5 am – 11 pm and Sun 6 am – 10 pm. Off-peak (10 am – 4 pm) is the quietest if you like elbow room.",
     ("class", "yoga", "zumba", "hiit"):
         "Group classes are listed on the Schedule page. Yoga: Tue/Thu 7am. Zumba: Mon/Wed/Fri 6pm. HIIT: Tue/Sat 7pm. Drop in any time — included with your membership.",
 }

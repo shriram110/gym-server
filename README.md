@@ -1,6 +1,6 @@
-# Iron Forge — Gym API (FastAPI)
+# Muscle Mania — Gym API (FastAPI)
 
-The backend for the Iron Forge gym management system. FastAPI + SQLAlchemy + PostgreSQL/SQLite + JWT.
+The backend for the Muscle Mania gym management system. FastAPI + SQLAlchemy + PostgreSQL/SQLite + JWT.
 
 > Built as a deployment-learning project. Pairs with [`gym-client`](../gym-client).
 
@@ -38,7 +38,7 @@ python -m app.seed
 
 This creates:
 - 3 packages (Basic / Pro / Elite)
-- 1 admin: `admin@ironforge.com` / `admin123`
+- 1 admin: `admin@musclemania.com` / `admin123`
 - 3 sample customers: `alex@example.com`, `priya@example.com`, `ryan@example.com` (passwords are first-name + 123)
 - Workouts, vitals, attendance, fees, achievements, classes
 

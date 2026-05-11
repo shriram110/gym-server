@@ -28,7 +28,7 @@ def register(payload: schemas.RegisterIn, db: Session = Depends(get_db)):
     # Welcome notification
     db.add(models.Notification(
         user_id=user.id,
-        title="Welcome to Iron Forge!",
+        title="Welcome to Muscle Mania!",
         message="Your fitness journey starts now. Visit your profile to set goals.",
         type="success",
     ))

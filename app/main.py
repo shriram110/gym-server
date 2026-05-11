@@ -8,7 +8,7 @@ from .routers import auth, customer, admin, public, chatbot
 # Auto-create tables for simplicity (no Alembic). For production, use migrations.
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI(title="Iron Forge Gym API", version="1.0.0")
+app = FastAPI(title="Muscle Mania Gym API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -21,7 +21,7 @@ app.add_middleware(
 
 @app.get("/")
 def root():
-    return {"name": "Iron Forge Gym API", "status": "ok", "docs": "/docs"}
+    return {"name": "Muscle Mania Gym API", "status": "ok", "docs": "/docs"}
 
 
 @app.get("/api/health")

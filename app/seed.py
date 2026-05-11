@@ -26,10 +26,10 @@ def seed():
             ])
 
         # Admin
-        if not db.query(models.User).filter_by(email="admin@ironforge.com").first():
+        if not db.query(models.User).filter_by(email="admin@musclemania.com").first():
             admin = models.User(
-                email="admin@ironforge.com",
-                name="Forge Admin",
+                email="admin@musclemania.com",
+                name="Muscle Mania Admin",
                 phone="9999999999",
                 role=models.UserRole.admin,
                 password_hash=hash_password("admin123"),
@@ -107,7 +107,7 @@ def seed():
             db.add(models.Achievement(user_id=u.id, title="First Workout Logged!", badge_icon="🏋️"))
             db.add(models.Achievement(user_id=u.id, title="Week Warrior", badge_icon="📅"))
             # Notifications
-            db.add(models.Notification(user_id=u.id, title="Welcome to Iron Forge!",
+            db.add(models.Notification(user_id=u.id, title="Welcome to Muscle Mania!",
                                        message="Your fitness journey starts now.", type="success"))
 
         # Enquiries
